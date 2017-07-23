@@ -2,7 +2,7 @@
 Ot360 is an android appplication which can support as a guide for the visiters in old trafford museum .
 
 ## Getting Started
-You will need to have [android studio](https://developer.android.com/studio/index.html) and [JDK 5 or 6](http://www.oracle.com/technetwork/java/javase/downloads/index.html)  and [android SDK] (https://developer.android.com/studio/index.html)
+You will need to have [android studio](https://developer.android.com/studio/index.html) and [JDK 5 or 6](http://www.oracle.com/technetwork/java/javase/downloads/index.html)  and [android SDK](https://developer.android.com/studio/index.html)
 
 Fetch OT360 App from github
 ```
