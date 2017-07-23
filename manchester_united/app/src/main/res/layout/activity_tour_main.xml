@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_tour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="agaze.com.manchesterunited.Activities.TourMain"
+    android:background="@drawable/ot_2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/sea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/back"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1">
+
+        <RelativeLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <View
+                android:id="@+id/viewline1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/welcome_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/viewline1"/>
+
+            <TextView
+                android:id="@+id/welcome_tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/welcome_txt"/>
+
+            <View
+                android:id="@+id/viewline2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/welcome_tour"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_3"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_below="@+id/viewline2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_border">
+
+                <ScrollView
+                    android:id="@+id/scroll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/att_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Attractions"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_title"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The trophy room"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_1"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The dressing room"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_2"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sir Matt Busby"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_3"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The Exterior"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_4"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Old Trafford Stadium"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_5"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The player tunnel"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_6"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Munich memorial"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_7"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="United shop"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_8"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Red cafe"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/att_lin_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_below="@+id/att_lin_9"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="15dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/error"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The trinity statue"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1.5"/>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_below="@+id/rel_3"
+                android:layout_marginTop="20dp"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/rounded_edittext"/>
+
+                    <TextView
+                        android:id="@+id/min_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MINS"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="25dp"
+                        android:layout_below="@+id/time_1"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/dist_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.2"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/rounded_edittext"/>
+
+                    <TextView
+                        android:id="@+id/kms_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KMS"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="30dp"
+                        android:layout_below="@+id/dist_1"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/sight_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="32"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/rounded_edittext"/>
+
+                    <TextView
+                        android:id="@+id/sig_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIGHTS"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/sight_1"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:text="GO"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@drawable/round_buttons"/>-->
+
+    <LinearLayout
+        android:id="@+id/time_rem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="seen 5/17 attractions"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="45 mins left"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

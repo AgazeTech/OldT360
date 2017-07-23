@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="agaze.com.manchesterunited.Activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/sea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/pagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The trophy room"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/back"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1">
+
+        <ImageView
+            android:id="@+id/att_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/att_1"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/play"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="180dp"/>
+
+        <LinearLayout
+            android:id="@+id/info_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/att_img"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navigation_red"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/ar_cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/info_btns"
+            android:padding="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/trophy_room"/>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/info_btns">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/map_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/map"
+                    android:scaleType="fitXY"/>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cam_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/info_btns"
+            android:padding="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--<TextView-->
+                        <!--android:id="@+id/cam_1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:layout_marginTop="30dp"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:text="Click on Start AR button and hold camera towards the attraction." />-->
+
+                    <Button
+                        android:id="@+id/ar_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Click and point towards the attraction."
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="60dp"
+                        android:drawableLeft="@drawable/augmented"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/round_borders"/>
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/next_att"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="@drawable/layout_border">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:padding="6dp"
+            android:background="@color/red">
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Attraction"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/att_name"
+                android:text="The Exteriors"
+                android:textSize="16sp"
+                android:layout_below="@+id/next"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/next_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation"
+            android:background="@color/green"
+            android:padding="11dp"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

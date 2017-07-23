@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Manchester United</string>
+    <string name="trophy_room">Old Trafford, home to Manchester United Football Club, is one of the worlds most iconic football stadiums. Nicknamed the Theatre of Dreams, Old Trafford stadium has been Manchester United home ground since 1910. Visitors can experience the clubs history and go behind the scenes with the Manchester United Museum and Stadium Tour. The award-winning Museum blends historical exhibits with interactive experiences, and covers an unrivaled depth of history. The 80 minute guided Stadium Tour allows visitors walk in the footsteps of legends, calling at the players dressing room, before walking out of the tunnel towards the hallowed turf. Visitors can take their seat in the Managers chair in the dugout and imagine the roar of the crowd on a match day. Additionally, visitors can have a bite to eat at the Manchester United Red Cafe. Visitors from all over the world are welcome to Old Trafford, and audio guides, souvenir guides and guided tours are available in a range of languages. We are committed to giving the same great experience to all visitors, so the tour of Old Trafford is fully accessible to wheelchair users, and the Museum has a lift to allow access to all 3 floors. Whether you are a Manchester United fan or not, a visit to Old Trafford stadium is a day to remember.</string>
+    <string name="select">Select a theme</string>
+    <string name="red_devils">THE RED DEVILS</string>
+    <string name="ardent">For the ardent fans</string>
+    <string name="history">THE HISTORY</string>
+    <string name="rich">The rich history of OT</string>
+    <string name="complete">COMPLETE TOUR</string>
+    <string name="everything">Experience everything of OT</string>
+
+</resources>
