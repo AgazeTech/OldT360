@@ -15,22 +15,11 @@ git clone https://github.com/AgazeTech/OldT360.git
 - android-beacon-library
 - Redbeacon-plugin
 
-- wala_cast.jar
-- wala_cast_java.jar
-- wala_cast_java_jdt.jar
-- wala_core_tests.jar
-- wala_core.jar
-- wala_ide.jar
-- wala_shrike.jar
-- wala_util.jar
-
 ### Installing
-Downlaod OT360 from [Github](https://github.com/AgazeTech/OldT360.git)
-Open Anddroid Studio
-File->Open->OT360 projectWorkspace
-Build->build Apk
-
-
+- Downlaod OT360 from [Github](https://github.com/AgazeTech/OldT360.git)
+- Open Anddroid Studio
+- File->Open->OT360 projectWorkspace
+- Build->build Apk
 
 ## Built With
 
