@@ -21,6 +21,5 @@ git clone https://github.com/AgazeTech/OldT360.git
 - File->Open->OT360 projectWorkspace
 - Build->build Apk
 
-## Built With
 
 
